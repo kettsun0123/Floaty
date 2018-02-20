@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    class="uno.ketts.floaty.Stage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@android:color/transparent"
+    android:id="@+id/layout_floaty_stage"
+    style="@style/Widget.Floaty" />

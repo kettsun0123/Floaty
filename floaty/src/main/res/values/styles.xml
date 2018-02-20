@@ -1,0 +1,6 @@
+<resources>
+  <style name="Widget.Floaty" parent="android:Widget">
+    <item name="android:minWidth">@dimen/floaty_min_width</item>
+    <item name="elevation">@dimen/floaty_elevation</item>
+  </style>
+</resources>
