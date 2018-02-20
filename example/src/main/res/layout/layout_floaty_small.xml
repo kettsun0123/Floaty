@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uno.ketts.floaty.FloatyContentLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_floaty_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/whisper"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/whisper"
+        tools:ignore="HardcodedText">
+
+        <TextView
+            android:id="@+id/text_floaty_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small one"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</uno.ketts.floaty.FloatyContentLayout>

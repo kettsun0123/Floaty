@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="FloatyLayout">
+    <attr name="android:maxWidth"/>
+    <attr name="elevation"/>
+    <attr format="dimension" name="maxActionInlineWidth"/>
+  </declare-styleable>
+  <declare-styleable name="FloatyContentLayout">
+    <attr name="maxWidth"/>
+  </declare-styleable>
+</resources>

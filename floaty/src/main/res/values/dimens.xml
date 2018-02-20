@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="floaty_background_corner_radius">0dp</dimen>
+  <dimen name="floaty_elevation">6dp</dimen>
+  <dimen name="floaty_extra_spacing_horizontal">0dp</dimen>
+  <dimen name="floaty_max_width">-1px</dimen>
+  <dimen name="floaty_min_width">-1px</dimen>
+  <dimen name="floaty_padding_horizontal">12dp</dimen>
+  <dimen name="floaty_padding_vertical">14dp</dimen>
+  <dimen name="floaty_padding_vertical_2lines">24dp</dimen>
+  <dimen name="floaty_text_size">14sp</dimen>
+</resources>
