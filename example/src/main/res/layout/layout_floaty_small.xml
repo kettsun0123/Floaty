@@ -5,13 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="bottom"
-    android:background="@color/whisper"
+    android:background="@color/colorAccent"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="@color/whisper"
         tools:ignore="HardcodedText">
 
         <TextView
@@ -20,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="Small one"
             android:textSize="14sp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_centerInParent="true"/>
 
     </RelativeLayout>
