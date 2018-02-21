@@ -7,7 +7,7 @@
 ```groovy
 
 dependencies {
-    compile 'com.github.kettsun0123:floaty:0.1.0'
+    implementation 'com.github.kettsun0123:floaty:0.1.0'
 }
 
 ```
