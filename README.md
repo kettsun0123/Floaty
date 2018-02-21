@@ -93,7 +93,7 @@ button_floaty_replace.setOnClickListener {
 ```
 
 ## Sample
-Clone this repo and check out the [app](https://github.com/kettsun0123/Floaty/tree/master/example) module.
+Clone this repo and check out the [example](https://github.com/kettsun0123/Floaty/tree/master/example) module.
 
 ## Change Log
 
@@ -108,8 +108,6 @@ Clone this repo and check out the [app](https://github.com/kettsun0123/Floaty/tr
     * **Github** - (https://github.com/kettsun0123)
     * **Twitter** - (https://twitter.com/kettsun0123)
     * **Facebook** - (https://www.facebook.com/y.kettsun)
-    
-## Thanks
 
 
 ## Licence
