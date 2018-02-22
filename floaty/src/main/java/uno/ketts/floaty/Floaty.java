@@ -41,17 +41,8 @@ public final class Floaty {
     static final int ANIMATION_DURATION = 250;
     static final int ANIMATION_FADE_DURATION = 180;
 
-    /**
-     * dissmissするまで表示（-2）
-     */
     public static final int LENGTH_INDEFINITE = -2;
-    /**
-     * Snackbarのshortと同じ間隔（-1）
-     */
     public static final int LENGTH_SHORT = -1;
-    /**
-     * Snackbarのlongと同じ間隔（0）
-     */
     public static final int LENGTH_LONG = 0;
 
     private final ViewGroup targetParent;
@@ -187,23 +178,18 @@ public final class Floaty {
         do {
             if (view instanceof FrameLayout) {
                 if (view.getId() == android.R.id.content) {
-                    // If we've hit the decor content view, then we didn't find a CoL in the
-                    // hierarchy, so use it.
                     return (ViewGroup) view;
                 } else {
-                    // It's not the content view but we'll use it as our fallback
                     fallback = (ViewGroup) view;
                 }
             }
 
             if (view != null) {
-                // Else, we will loop and crawl up the view hierarchy and try to find a parent
                 final ViewParent parent = view.getParent();
                 view = parent instanceof View ? (View) parent : null;
             }
         } while (view != null);
 
-        // If we reach here then we didn't find a CoL or a suitable content view so we'll fallback
         return fallback;
     }
 
@@ -234,7 +220,6 @@ public final class Floaty {
 
     private void onViewHidden() {
         FloatyManager.getInstance().onDismissed(managerCallback);
-        // Lastly, hide and remove the view from the parent (if attached)
         final ViewParent parent = stage.getParent();
         if (parent instanceof ViewGroup) {
             ((ViewGroup) parent).removeView(stage);
@@ -274,19 +259,16 @@ public final class Floaty {
 
         if (ViewCompat.isLaidOut(stage)) {
             if (shouldAnimate()) {
-                // If animations are enabled, animate it in
                 animateStageIn();
                 animateViewIn();
             }
         } else {
-            // Otherwise, add one of our layout change listeners and show it in when laid out
             stage.setOnLayoutChangeListener(new Floaty.OnLayoutChangeListener() {
                 @Override
                 public void onLayoutChange(View view, int left, int top, int right, int bottom) {
                     Floaty.this.stage.setOnLayoutChangeListener(null);
 
                     if (shouldAnimate()) {
-                        // If animations are enabled, animate it in
                         animateStageIn();
                         animateViewIn();
                     }

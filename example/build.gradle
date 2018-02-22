@@ -23,6 +23,5 @@ android {
 dependencies {
     implementation "com.android.support:appcompat-v7:$APP_COMPAT_VERSION"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre8:$KOTLIN_VERSION"
-
-    implementation project(':floaty')
+    implementation 'com.github.kettsun0123:floaty:0.1.0'
 }
